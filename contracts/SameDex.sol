@@ -3,7 +3,7 @@ pragma solidity ^0.8.20;
 
 import { OApp } from "./OApp.sol";
 import { MessagingFee, MessagingReceipt } from "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol";
-import { Origin } from "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol"; // ✅ REQUIRED
+import { Origin } from "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol"; 
 
 abstract contract SameDex is OApp {
     event Bridged(uint32 dstEid, address token, uint256 amount, address receiver);
